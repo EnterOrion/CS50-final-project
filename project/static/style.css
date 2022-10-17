@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+.navbar {
+    min-height: 60px;
+    height: 60px;
+    background: linear-gradient(to right, #191970, #4343d6);
+    border-bottom: 8px solid #000000;
+    font-family: 'Courier', Monospace;
+    font-weight: bold;
+
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Monaco', Monospace;
+
+
+}
+
+
+.nav-link {
+    margin-right: 1em !important;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Arial Narrow', serif;
+    font-size: 18px;
+}
+.nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.btn {
+    background-color: #191970;
+}
+
+.form-group{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.specialtext {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+label {
+    margin-right: 7px;
+    margin-left: 10px;
+}
+
+button {
+    margin-right: 10px;
+    margin-left: 10px;
+
+}

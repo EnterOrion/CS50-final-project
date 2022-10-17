@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+
+<h1>Realtime, accurate currency exchange data.</h1>
+<p> Use the tool below to check the exchange rate between any two currencies.</p>
+
+<form action="/" method="post">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="amount" placeholder="Amount" type="text">
+    </div>
+
+        <label>Currency 1</label>
+        <select name="currency1">
+        {% for i in currencies %}
+        <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+        </select>
+
+        <label>Currency 2</label>
+        <select name ="currency2">
+        {% for i in currencies %}
+        <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+        </select>
+
+        <button class="btn btn-primary" type="submit">Convert!</button>
+</form>
+
+
+{% endblock %}
